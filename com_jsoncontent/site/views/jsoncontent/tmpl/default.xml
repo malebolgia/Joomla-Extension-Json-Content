@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_JSONCONTENT_JSONCONTENT_VIEW_DEFAULT_TITLE">
+		<message>
+			<![CDATA[COM_JSONCONTENT_JSONCONTENT_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_jsoncontent/models/fields"
+	>
+		<fieldset name="request">
+			<field name="id_content" type="sql" default="0" label="COM_SELECT_CONTENT_ARTICLE" query="SELECT 0 AS id, 'Show all content' AS title UNION SELECT id, title FROM #__content WHERE state = 1" key_field="id" value_field="title" />
+		</fieldset>
+	</fields>
+</metadata>

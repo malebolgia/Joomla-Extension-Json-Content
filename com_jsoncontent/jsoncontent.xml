@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+ 
+	<name>Jsoncontent</name>
+	<!-- The following elements are optional and free of formatting constraints -->
+	<creationDate>December 2012</creationDate>
+	<author>Aaron Jefferson Villanueva</author>
+	<authorEmail>aj_villanueva@shadowsonawall.net</authorEmail>
+	<authorUrl>http://www.shadowsonawwall.net</authorUrl>
+	<copyright>AJ Shadowsonawall.net 2012</copyright>
+	<license>Any one can modify this - I don't care</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.2</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Content JSON</description>
+
+ 
+ 
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jsoncontent.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>language</folder>
+	</files>
+	
+	<media destination="com_jsoncontent" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+	
+	<administration>
+		<menu view = "about" img="../media/com_jsoncontent/images/about_16x16.png">COM_JSONCONTENT_ABOUT_MENU</menu>
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>jsoncontent.php</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>controller.php</filename>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>controllers</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jsoncontent.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jsoncontent.sys.ini</language>
+		</languages>
+	</administration>
+ 
+ 
+</extension>
